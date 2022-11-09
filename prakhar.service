@@ -1,0 +1,12 @@
+[Unit]
+Description=CVMID
+After=multi-user.target
+
+[Service]
+Type=simple
+ExecStart=python /prakh/Desktop/CVMID1/prakhar.py
+User=prakhar
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
